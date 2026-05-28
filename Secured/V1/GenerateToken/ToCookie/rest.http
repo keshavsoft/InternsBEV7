@@ -3,6 +3,6 @@ POST http://localhost:9328/Secured/V1/GenerateToken/ToCookie
 Content-Type: application/json
 
 {
-    "UserName":"",
-    "Password":""
+    "UserName":"Keshav",
+    "Password":"9848163021@Kkd"
 }
