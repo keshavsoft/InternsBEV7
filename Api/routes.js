@@ -2,7 +2,7 @@ import express from 'express';
 
 const router = express.Router();
 
-import { StartFunc as StartFuncFromMiddleware } from "./MiddleWares/entryFile.js";
+import { StartFunc as StartFuncFromMiddleware } from "../MiddleWares/Api/entryFile.js";
 
 import { router as routerFromUtility } from "./Utility/routes.js";
 import { router as routerFromUsers } from "./Users/routes.js";
