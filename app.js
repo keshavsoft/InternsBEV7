@@ -10,6 +10,7 @@ import { router as routerFromApi } from "./Api/routes.js";
 import { router as routerFromV4 } from "./V4/routes.js";
 import { router as WhatsApp } from "./Projects/WhatsApp/routes.js";
 import { router as routerFromSecured } from "./Secured/routes.js";
+import { router as routerFromProtected } from "./Protected/routes.js";
 
 const app = express()
 
@@ -25,7 +26,9 @@ app.use("/Api", routerFromApi);
 app.use("/V4", routerFromV4);
 app.use("/WhatsApp", WhatsApp);
 
-app.use("/Secured", routerFromSecured);;
+app.use("/Secured", routerFromSecured);
+app.use("/Protected", routerFromProtected);
+;
 
 StartFuncFromWebSocketServer(server);
 
