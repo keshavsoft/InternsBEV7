@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncFromCreateToken } from "../../../Token/CreateToken.js";
+import { StartFunc as StartFuncFromCreateToken } from "../../../../Token/jwt/CreateToken.js";
 import { postDefaultFunc as postDefaultFuncFromRepo } from "../Repos/entryFile.js";
 
 let postFilterDataFromBodyFunc = (req, res) => {
